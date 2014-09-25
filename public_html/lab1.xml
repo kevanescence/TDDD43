@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="lab1.xsd">
+    <experts_list>
+        <expert id="3">
+            <name>JJ</name>
+            <email>blablablubl</email>
+            <recommands>3</recommands>
+        </expert>
+        <expert id="4">
+            <name>tutu</name>
+            <email>blabla</email>
+            <recommands>3</recommands>
+            <recommands>4</recommands>
+        </expert>
+        <expert id="5">
+            <name>tutu</name>
+            <email>blablablbulu</email>
+        </expert>
+    </experts_list>
+    <topics_list>
+        <topic id="1">
+            <name>DB</name>
+            <organisator>3</organisator>
+            <subtopic>3</subtopic>
+        </topic>
+        <topic id="2">
+            <name>CS</name>
+            <organisator>3</organisator>
+            <subtopic>1</subtopic>
+            <!--<subtopic>3</subtopic>-->
+        </topic>
+        <topic id="3">
+            <name>SQL</name>
+            <organisator>4</organisator>            
+        </topic>
+    </topics_list>
+</root>
