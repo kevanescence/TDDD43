@@ -6,13 +6,19 @@
         <expert id="3">
             <name>JJ</name>
             <email>blablablubl</email>
-            <recommands>3</recommands>
+             <recommandation>
+                <recommands>4</recommands>
+            </recommandation>
         </expert>
         <expert id="4">
             <name>tutu</name>
             <email>blabla</email>
-            <recommands>3</recommands>
-            <recommands>4</recommands>
+            <recommandation>
+                <recommanded>3</recommanded>
+            </recommandation>
+            <recommandation>
+                <recommands>5</recommands>
+            </recommandation>
         </expert>
         <expert id="5">
             <name>tutu</name>
