@@ -6,13 +6,20 @@
         <expert id="3">
             <name>JJ</name>
             <email>blablablubl</email>
-             <recommandation>
+			<expertise_areas_list>
+				<expertise_area>1</expertise_area>
+				<expertise_area>3</expertise_area>
+			</expertise_areas_list>
+            <recommandation>
                 <recommands>4</recommands>
             </recommandation>
         </expert>
         <expert id="4">
             <name>tutu</name>
             <email>blabla</email>
+			<expertise_areas_list>
+				<expertise_area>2</expertise_area>
+			</expertise_areas_list>
             <recommandation>
                 <recommanded>3</recommanded>
             </recommandation>
@@ -23,6 +30,9 @@
         <expert id="5">
             <name>tutu</name>
             <email>blablablbulu</email>
+			<expertise_areas_list>
+				<expertise_area>2</expertise_area>
+			</expertise_areas_list>
         </expert>
     </experts_list>
     <topics_list>
