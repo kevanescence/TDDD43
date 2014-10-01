@@ -10,11 +10,6 @@
                         <xs:selector xpath="expert" />
                         <xs:field xpath="email" />
                     </xs:unique>
-                    <!--Specify that all experts area of a given expert must be unique-->
-                    <!--                    <xs:unique name="expertAreaUnique">
-                        <xs:selector xpath="expert/expertise_areas_list" />
-                        <xs:field xpath="expertise_area" />
-                    </xs:unique>-->
                 </xs:element>
                 <xs:element name="topics_list" type="topics_list_type">
                     <!-- Specify that all topics must have a different name -->
@@ -60,14 +55,22 @@
             <xs:selector xpath="experts_list/expert/expertise_areas_list/expertise_area" />
             <xs:field xpath="." />
         </xs:keyref>
+        <!-- topic expert list constraint -->
+        <xs:keyref name="fk_topic_expert" refer="expertKey">
+            <xs:selector xpath="topics_list/topic/topic_experts_list/expert_id" />
+            <xs:field xpath="." />
+        </xs:keyref>
         <!-- Subtopic constraint -->
         <xs:keyref name="fk_subtopics" refer="topicKey">
-            <xs:selector xpath="topics_list/topic/subtopic" />
+            <xs:selector xpath="topics_list/topic/subtopics_list/subtopic" />
             <xs:field xpath="." />
         </xs:keyref>
     </xs:element>
     
-    <!-- Define the expert_list type -->
+    
+    
+    <!-- ##################  DEFINE ALL COMPLEX TYPES #####################-->    
+    <!-- Define an experts list-->
     <xs:complexType name="expert_list_type">
         <xs:sequence>
             <xs:element name="expert" type="expert_type" 
@@ -75,7 +78,7 @@
         </xs:sequence>                   
     </xs:complexType>
 	
-    <!-- Define the expert type -->
+    <!-- Define an expert -->
     <xs:complexType name="expert_type">
         <xs:sequence>            
             <xs:element name="name" type="xs:string"/> 
@@ -133,9 +136,26 @@
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
             <xs:element name="organisator" type="xs:int"/>
-            <xs:element name="subtopic" type="xs:int"
-                    minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="subtopics_list" type="subtopics_list_type"
+                    minOccurs="0"/>
+           <xs:element name="topic_experts_list" minOccurs="0" maxOccurs="1"
+                       type="topic_experts_list_type"/>                         
         </xs:sequence>
         <xs:attribute name="id" type="xs:int"/>
+    </xs:complexType>
+    
+    <!-- Define a topic experts list -->
+    <xs:complexType name="topic_experts_list_type">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="unbounded"
+                        name="expert_id" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Define a subtopic list -->
+    <xs:complexType name="subtopics_list_type">
+        <xs:sequence>
+            <xs:element name="subtopic" type="xs:int" 
+                        minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
     </xs:complexType>
 </xs:schema>
