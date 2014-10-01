@@ -25,20 +25,21 @@
         <xs:key name="expertKey">
             <xs:selector xpath="experts_list/expert" />
             <xs:field xpath="@id" />
-        </xs:key>                        
+        </xs:key>
+                              
         <!-- Expert recommendation constraints -->
         <xs:keyref name="fk_experts_recommends" refer="expertKey">
-            <xs:selector xpath="experts_list/expert/recommandation" />
-            <xs:field xpath="recommands" />
+            <xs:selector xpath="experts_list/expert/recommendation" />
+            <xs:field xpath="recommends" />
         </xs:keyref>
         <!-- Expert recommended constraints -->
         <xs:keyref name="fk_experts_recommended" refer="expertKey">
-            <xs:selector xpath="experts_list/expert/recommandations_list/recommands" />
-            <xs:field xpath="recommanded" />
+            <xs:selector xpath="experts_list/expert/recommendations_list/recommends" />
+            <xs:field xpath="recommended" />
         </xs:keyref>
         <xs:keyref name="fk_experts_recommender" refer="expertKey">
-            <xs:selector xpath="experts_list/expert/recommandations_list/recommanded_by" />
-            <xs:field xpath="recommander" />
+            <xs:selector xpath="experts_list/expert/recommendations_list/recommended_by" />
+            <xs:field xpath="recommender" />
         </xs:keyref>
         <!-- Define the key on the topics -->
         <xs:key name="topicKey">
@@ -85,36 +86,40 @@
             <xs:element name="email" type="xs:string"/>
             <xs:element name="expertise_areas_list" 
                         type="expertise_areas_list_type"/>
-            <xs:element name="recommandations_list"
-                        type="recommandations_list_type"
+            <xs:element name="recommendations_list"
+                        type="recommendations_list_type"
                         minOccurs="0"/>    
         </xs:sequence>        
         <xs:attribute name="id" type="xs:int" use="required" />        
     </xs:complexType>
-    <!-- Define a recommendation -->
-    <xs:complexType name="recommandations_list_type">
+    
+    
+    <!-- Define a recommendation list -->
+    <xs:complexType name="recommendations_list_type">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="recommands" type="recommands_type" 
+            <xs:element name="recommends" type="recommends_type" 
                         />
-            <xs:element name="recommanded_by" type="recommanded_type" 
+            <xs:element name="recommended_by" type="recommended_type" 
                         />
         </xs:choice>
     </xs:complexType>
     
-    <!-- Define a recommands tag -->
-    <xs:complexType name="recommands_type">
+    <!-- Define a recommends tag-->
+    <xs:complexType name="recommends_type">
         <xs:sequence>
             <xs:element name="justification" type="xs:string"/>
-            <xs:element name="recommanded" type="xs:int"/>
+            <xs:element name="recommended" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
-    <!-- Define a recommanded by tag -->
-    <xs:complexType name="recommanded_type">
+    
+    <!-- Define a recommended_by tag -->
+    <xs:complexType name="recommended_type">
         <xs:sequence>            
-            <xs:element name="recommander" type="xs:int"/>
+            <xs:element name="recommender" type="xs:int"/>
         </xs:sequence>
-    </xs:complexType>      
-    <!-- Definition of the expertise_areas_list type -->
+    </xs:complexType>
+    
+    <!-- Define a expertise_area list -->
     <xs:complexType name="expertise_areas_list_type">
         <xs:sequence>
             <xs:element name="expertise_area" type="xs:int"
@@ -151,6 +156,7 @@
                         name="expert_id" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
+    
     <!-- Define a subtopic list -->
     <xs:complexType name="subtopics_list_type">
         <xs:sequence>

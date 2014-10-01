@@ -10,15 +10,15 @@
                 <expertise_area>1</expertise_area>
                 <expertise_area>3</expertise_area>                
             </expertise_areas_list>            
-            <recommandations_list>
-                <recommands>
+            <recommendations_list>
+                <recommends>
                     <justification>blabalb</justification>
-                    <recommanded>4</recommanded>                    
-                </recommands>
-                <recommanded_by>                    
-                    <recommander>5</recommander>
-                </recommanded_by>
-            </recommandations_list>
+                    <recommended>4</recommended>                    
+                </recommends>
+                <recommended_by>                    
+                    <recommender>5</recommender>
+                </recommended_by>
+            </recommendations_list>
         </expert>
         <expert id="4">
             <name>tutu</name>
