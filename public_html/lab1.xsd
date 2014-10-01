@@ -48,8 +48,8 @@
         </xs:keyref>
 		<!-- The references to expertises area -->
         <xs:keyref name="fk_expertise_areas" refer="topicKey">
-            <xs:selector xpath="expers_list/expert/expertise_areas_list" />
-            <xs:field xpath="expertise_area" />
+            <xs:selector xpath="experts_list/expert/expertise_areas_list/expertise_area" />
+            <xs:field xpath="." />
         </xs:keyref>
         <!-- Subtopic constraint -->
         <xs:keyref name="fk_subtopics" refer="topicKey">
