@@ -5,34 +5,35 @@
     <experts_list>
         <expert id="3">
             <name>JJ</name>
-            <email>blablablubl</email>
-			<expertise_areas_list>
-				<expertise_area>1</expertise_area>
-				<expertise_area>30</expertise_area>
-			</expertise_areas_list>
-            <recommandation>
-                <recommands>4</recommands>
-            </recommandation>
+
+            <email>blablablubl</email>            
+            <expertise_areas_list>
+                <expertise_area>1</expertise_area>
+                <expertise_area>3</expertise_area>                
+            </expertise_areas_list>            
+            <recommandations_list>
+                <recommands>
+                    <justification>blabalb</justification>
+                    <recommanded>4</recommanded>                    
+                </recommands>
+                <recommanded_by>                    
+                    <recommander>5</recommander>
+                </recommanded_by>
+            </recommandations_list>
         </expert>
         <expert id="4">
             <name>tutu</name>
             <email>blabla</email>
-			<expertise_areas_list>
-				<expertise_area>2</expertise_area>
-			</expertise_areas_list>
-            <recommandation>
-                <recommanded>3</recommanded>
-            </recommandation>
-            <recommandation>
-                <recommands>5</recommands>
-            </recommandation>
+            <expertise_areas_list>
+                <expertise_area>2</expertise_area>
+            </expertise_areas_list>
         </expert>
         <expert id="5">
             <name>tutu</name>
             <email>blablablbulu</email>
-			<expertise_areas_list>
-				<expertise_area>2</expertise_area>
-			</expertise_areas_list>
+            <expertise_areas_list>
+                <expertise_area>2</expertise_area>
+            </expertise_areas_list>
         </expert>
     </experts_list>
     <topics_list>
@@ -45,7 +46,7 @@
             <name>CS</name>
             <organisator>3</organisator>
             <subtopic>1</subtopic>
-            <!--<subtopic>3</subtopic>-->
+            <subtopic>3</subtopic>
         </topic>
         <topic id="3">
             <name>SQL</name>
