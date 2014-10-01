@@ -84,6 +84,8 @@
         <xs:sequence>            
             <xs:element name="name" type="xs:string"/> 
             <xs:element name="email" type="xs:string"/>
+			<xs:element name="description" type="expert_description_type"
+						minOccurs="0" maxOccurs="1"/>
             <xs:element name="expertise_areas_list" 
                         type="expertise_areas_list_type"/>
             <xs:element name="recommendations_list"
@@ -93,7 +95,33 @@
         <xs:attribute name="id" type="xs:int" use="required" />        
     </xs:complexType>
     
-    
+	<!-- Definition of the description of an expert -->
+	<xs:complexType name="expert_description_type">
+		<xs:choice>
+			<xs:element name="CV" type="job_list_type"
+						minOccurs="0" maxOccurs="1"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<!-- Definition of an expert's job list -->
+	<xs:complexType name="job_list_type">
+		<xs:sequence>
+			<xs:element name="job" type="job_type"
+						minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+    <!-- Definition of an expert's jobs list -->
+	<xs:complexType name="job_type">
+		<xs:sequence>
+			<xs:element name="job" type="xs:string"/>
+			<xs:element name="job_desc" type="xs:string"
+						minOccurs="0" maxOccurs="1"/>
+			<xs:element name="begin_date" type="xs:date"/>
+			<xs:element name="end_date" type="xs:date"/>			
+		</xs:sequence>
+	</xs:complexType>
+	
     <!-- Define a recommendation list -->
     <xs:complexType name="recommendations_list_type">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
