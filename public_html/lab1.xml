@@ -2,10 +2,80 @@
 <root xmlns="" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="lab1.xsd">
+
 	<experts_list>
+		<expert id="1">
+			<name>Elsa VERSAIRE</name>
+			<email>elsav@outlook.com</email>
+			<expertise_areas_list>
+				<expertise_area>4</expertise_area>
+				<expertise_area>1</expertise_area>
+				<expertise_area>3</expertise_area>
+			</expertise_areas_list>
+			<recommendations_list>
+				<recommends>
+					<justification></justification>
+					<recommended>6</recommended>
+				</recommends>
+			</recommendations_list>
+		</expert>
+		<expert id="2">
+			<name>Laure VERSAIRE</name>
+			<email>laurev@outlook.com</email>
+			<expertise_areas_list>
+				<expertise_area>2</expertise_area>
+				<expertise_area>6</expertise_area>
+			</expertise_areas_list>
+			<recommendations_list>
+				<recommends>
+					<justification></justification>
+					<recommended>6</recommended>
+				</recommends>
+				<recommends>
+					<justification></justification>
+					<recommended>8</recommended>
+				</recommends>
+				<recommended_by>
+					<recommender>5</recommender>
+				</recommended_by>
+			</recommendations_list>
+		</expert>
 		<expert id="3">
-			<name>JJ</name>
-			<email>blablablubl</email>  
+			<name>Rose VERSAIRE</name>
+			<email>rosev@outlook.com</email>
+			<expertise_areas_list>
+				<expertise_area>1</expertise_area>
+				<expertise_area>3</expertise_area>
+				<expertise_area>5</expertise_area>
+			</expertise_areas_list>
+			<recommendations_list>
+				<recommends>
+					<justification></justification>
+					<recommended>8</recommended>
+				</recommends>
+				<recommended_by>
+					<recommender>6</recommender>
+				</recommended_by>
+				<recommended_by>
+					<recommender>7</recommender>
+				</recommended_by>
+			</recommendations_list>
+		</expert>
+		<expert id="4">
+			<name>Annie VERSAIRE</name>
+			<email>anniev@outlook.com</email>
+			<expertise_areas_list>
+				<expertise_area>4</expertise_area>
+			</expertise_areas_list>
+			<recommendations_list>
+				<recommended_by>
+					<recommender>6</recommender>
+				</recommended_by>
+			</recommendations_list>
+		</expert>
+		<expert id="5">
+			<name>Jean-Michel MARTIN</name>
+			<email>jmm@gmail.com</email>  
 			<description>
 				<jobs_list>
 					<job>
@@ -22,60 +92,253 @@
 				</education_list>
 			</description>
 			<expertise_areas_list>
-				<expertise_area>1</expertise_area>
-				<expertise_area>3</expertise_area>                
+				<expertise_area>7</expertise_area>
+				<expertise_area>11</expertise_area>                
 			</expertise_areas_list>            
 			<recommendations_list>
 				<recommends>
-					<justification>blabalb</justification>
-					<recommended>4</recommended>                    
+					<justification>never late</justification>
+					<recommended>5</recommended>                    
 				</recommends>
-				<recommended_by>                    
-					<recommender>5</recommender>
+				<recommends>
+					<justification></justification>
+					<recommended>8</recommended>
+				</recommends>
+			</recommendations_list>
+		</expert>
+		<expert id="6">
+			<name>Jean-Jacques De Compostelle</name>
+			<email>jjc@hotmail.com</email>
+			<expertise_areas_list>
+				<expertise_area>13</expertise_area>
+			</expertise_areas_list>
+			<recommendations_list>
+				<recommends>
+					<justification>has a lot of experience</justification>
+					<recommended>3</recommended>
+				</recommends>
+				<recommends>
+					<justification>knows how to learn people</justification>
+					<recommended>4</recommended>
+				</recommends>
+				<recommends>
+					<justification>a cool comment</justification>
+					<recommended>7</recommended>
+				</recommends>
+				<recommends>
+					<justification></justification>
+					<recommended>8</recommended>
+				</recommends>
+				<recommended_by>
+					<recommender>1</recommender>
+				</recommended_by>
+				<recommended_by>
+					<recommender>2</recommender>
 				</recommended_by>
 			</recommendations_list>
 		</expert>
-		<expert id="4">
-			<name>tutu</name>
-			<email>blabla</email>
+		<expert id="7">
+			<name>Rémy MARTIN</name>
+			<email>rm@yahoo.fr</email>
 			<expertise_areas_list>
-				<expertise_area>2</expertise_area>
+				<expertise_area>8</expertise_area>
+				<expertise_area>9</expertise_area>
+				<expertise_area>10</expertise_area>
+				<expertise_area>12</expertise_area>
 			</expertise_areas_list>
+			<recommendations_list>
+				<recommends>
+					<justification>serious at work</justification>
+					<recommended>3</recommended>
+				</recommends>
+				<recommended_by>
+					<recommender>6</recommender>
+				</recommended_by>
+			</recommendations_list>
 		</expert>
-		<expert id="5">
-			<name>tutu</name>
-			<email>blablablbulu</email>
+		<expert id="8">
+			<name>Bernard DUPONT</name>
+			<email>lebogossedu38@gmail.com</email>
 			<expertise_areas_list>
-				<expertise_area>2</expertise_area>
+				<expertise_area>10</expertise_area>
+				<expertise_area>12</expertise_area>
+				<expertise_area>13</expertise_area>
 			</expertise_areas_list>
+			<recommendations_list>
+				<recommended_by>
+					<recommender>2</recommender>
+				</recommended_by>
+				<recommended_by>
+					<recommender>3</recommender>
+				</recommended_by>
+				<recommended_by>
+					<recommender>5</recommender>
+				</recommended_by>
+				<recommended_by>
+					<recommender>6</recommender>
+				</recommended_by>
+			</recommendations_list>
 		</expert>
+		<expert id="9">
+			<name>Yvon ANCHIER</name>
+			<email>ya@outlook.com</email>
+			<expertise_areas_list>
+				<expertise_area>13</expertise_area>
+				<expertise_area>14</expertise_area>
+			</expertise_areas_list>
+		</expert>		
 	</experts_list>
 	<topics_list>
 		<topic id="1">
-			<name>DB</name>
+			<name>Management</name>
+			<description>Learn to lead a team</description>
 			<organisator>3</organisator>
-			<subtopics_list>
-				<subtopic>3</subtopic>
-			</subtopics_list>           
 			<topic_experts_list>
-				<expert_id>4</expert_id>                
-			</topic_experts_list> 
+				<expert_id>1</expert_id>
+				<expert_id>3</expert_id>
+			</topic_experts_list>
 		</topic>
 		<topic id="2">
-			<name>CS</name>
-			<organisator>3</organisator>
+			<name>Human Sciences</name>
+			<description>All HS fields</description>
+			<organisator>2</organisator>
 			<subtopics_list>
 				<subtopic>1</subtopic>
 				<subtopic>3</subtopic>
+				<subtopic>4</subtopic>
 			</subtopics_list>
 			<topic_experts_list>
+				<expert_id>2</expert_id>
+			</topic_experts_list>
+		</topic>
+		<topic id="3">
+			<name>Psychology</name>
+			<description>Learn how people's mind work</description>
+			<organisator>3</organisator>
+			<subtopics_list>
+				<subtopic>1</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>1</expert_id>
+				<expert_id>3</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="4">
+			<name>Communication</name>
+			<description>How to solve communication issues</description>
+			<organisator>1</organisator>
+			<topic_experts_list>
+				<expert_id>1</expert_id>
 				<expert_id>4</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="5">
+			<name>Advertising</name>
+			<description>Learn how to drive people into buying our products</description>
+			<organisator>3</organisator>
+			<topic_experts_list>
+				<expert_id>3</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="6">
+			<name>Marketing</name>
+			<description>How people can have a good image of our product</description>
+			<organisator>2</organisator>
+			<subtopics_list>
+				<subtopic>5</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>2</expert_id>
+			</topic_experts_list>            
+		</topic>		
+		<topic id="7">
+			<name>SQL</name>
+			<description>Language for databases</description>
+			<organisator>5</organisator>         
+			<topic_experts_list>
+				<expert_id>5</expert_id>                
+			</topic_experts_list> 
+		</topic>
+		<topic id="8">
+			<name>Algorithm</name>
+			<description>How algorithms work</description>
+			<organisator>8</organisator>
+			<subtopics_list>
+				<subtopic>9</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>7</expert_id>
+			</topic_experts_list>
+		</topic>
+		<topic id="9">
+			<name>Data structures</name>
+			<description>Basic data structures</description>
+			<organisator>7</organisator>   
+			<subtopics_list>
+				<subtopic>10</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>7</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="10">
+			<name>Parallel programming</name>
+			<description>Parallel algorithms</description>
+			<organisator>8</organisator>   
+			<topic_experts_list>
+				<expert_id>7</expert_id>
+				<expert_id>8</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="11">
+			<name>DB</name>
+			<description>All database technologies</description>
+			<organisator>5</organisator>
+			<subtopics_list>
+				<subtopic>7</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
 				<expert_id>5</expert_id>
 			</topic_experts_list>          
 		</topic>
-		<topic id="3">
-			<name>SQL</name>
-			<organisator>4</organisator>            
+		<topic id="12">
+			<name>CS</name>
+			<description>Computer science</description>
+			<organisator>7</organisator>
+			<subtopics_list>
+				<subtopic>6</subtopic>
+				<subtopic>7</subtopic>
+				<subtopic>9</subtopic>
+				<subtopic>10</subtopic>
+				<subtopic>11</subtopic>
+				<subtopic>13</subtopic>
+				<subtopic>14</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>8</expert_id>
+				<expert_id>7</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="13">
+			<name>UML</name>
+			<description>Unified modelling language</description>
+			<organisator>8</organisator>    
+			<topic_experts_list>
+				<expert_id>6</expert_id>
+				<expert_id>8</expert_id>
+				<expert_id>9</expert_id>
+			</topic_experts_list>			
+		</topic>
+		<topic id="14">
+			<name>Software Engineering</name>
+			<description>Software engineering</description>
+			<organisator>9</organisator>  
+			<subtopics_list>
+				<subtopic>7</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>9</expert_id>
+			</topic_experts_list>			
 		</topic>
 	</topics_list>
 </root>
