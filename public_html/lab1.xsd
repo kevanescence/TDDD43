@@ -194,6 +194,7 @@
 	<xs:complexType name="topic_type">
 		<xs:sequence>
 			<xs:element name="name" type="xs:string"/>
+			<xs:element name="description" type="xs:string"/>
 			<xs:element name="organisator" type="xs:int"/>
 			<xs:element name="subtopics_list" type="subtopics_list_type"
                     minOccurs="0"/>
