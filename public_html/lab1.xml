@@ -5,11 +5,10 @@
     <experts_list>
         <expert id="3">
             <name>JJ</name>
-
             <email>blablablubl</email>            
             <expertise_areas_list>
                 <expertise_area>1</expertise_area>
-                <expertise_area>3</expertise_area>                
+                <expertise_area>3</expertise_area>                                
             </expertise_areas_list>            
             <recommendations_list>
                 <recommends>
