@@ -2,69 +2,80 @@
 <root xmlns="" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="lab1.xsd">
-    <experts_list>
-        <expert id="3">
-            <name>JJ</name>
-
-            <email>blablablubl</email>  
+	<experts_list>
+		<expert id="3">
+			<name>JJ</name>
+			<email>blablablubl</email>  
 			<description>
-				
+				<jobs_list>
+					<job>
+						<job_name>Pro</job_name>
+						<begin_date>2012-02-02</begin_date>
+					</job>
+				</jobs_list>
+				<education_list>
+					<education>
+					<education_title>School</education_title>
+					<begin_date>2004-09-01</begin_date>
+					<end_date>2009-06-30</end_date>
+					</education>
+				</education_list>
 			</description>
-            <expertise_areas_list>
-                <expertise_area>1</expertise_area>
-                <expertise_area>3</expertise_area>                
-            </expertise_areas_list>            
-            <recommendations_list>
-                <recommends>
-                    <justification>blabalb</justification>
-                    <recommended>4</recommended>                    
-                </recommends>
-                <recommended_by>                    
-                    <recommender>5</recommender>
-                </recommended_by>
-            </recommendations_list>
-        </expert>
-        <expert id="4">
-            <name>tutu</name>
-            <email>blabla</email>
-            <expertise_areas_list>
-                <expertise_area>2</expertise_area>
-            </expertise_areas_list>
-        </expert>
-        <expert id="5">
-            <name>tutu</name>
-            <email>blablablbulu</email>
-            <expertise_areas_list>
-                <expertise_area>2</expertise_area>
-            </expertise_areas_list>
-        </expert>
-    </experts_list>
-    <topics_list>
-        <topic id="1">
-            <name>DB</name>
-            <organisator>3</organisator>
-            <subtopics_list>
-                <subtopic>3</subtopic>
-            </subtopics_list>           
-            <topic_experts_list>
-                <expert_id>4</expert_id>                
-            </topic_experts_list> 
-        </topic>
-        <topic id="2">
-            <name>CS</name>
-            <organisator>3</organisator>
-            <subtopics_list>
-                <subtopic>1</subtopic>
-                <subtopic>3</subtopic>
-            </subtopics_list>
-            <topic_experts_list>
-                <expert_id>4</expert_id>
-                <expert_id>5</expert_id>
-            </topic_experts_list>          
-        </topic>
-        <topic id="3">
-            <name>SQL</name>
-            <organisator>4</organisator>            
-        </topic>
-    </topics_list>
+			<expertise_areas_list>
+				<expertise_area>1</expertise_area>
+				<expertise_area>3</expertise_area>                
+			</expertise_areas_list>            
+			<recommendations_list>
+				<recommends>
+					<justification>blabalb</justification>
+					<recommended>4</recommended>                    
+				</recommends>
+				<recommended_by>                    
+					<recommender>5</recommender>
+				</recommended_by>
+			</recommendations_list>
+		</expert>
+		<expert id="4">
+			<name>tutu</name>
+			<email>blabla</email>
+			<expertise_areas_list>
+				<expertise_area>2</expertise_area>
+			</expertise_areas_list>
+		</expert>
+		<expert id="5">
+			<name>tutu</name>
+			<email>blablablbulu</email>
+			<expertise_areas_list>
+				<expertise_area>2</expertise_area>
+			</expertise_areas_list>
+		</expert>
+	</experts_list>
+	<topics_list>
+		<topic id="1">
+			<name>DB</name>
+			<organisator>3</organisator>
+			<subtopics_list>
+				<subtopic>3</subtopic>
+			</subtopics_list>           
+			<topic_experts_list>
+				<expert_id>4</expert_id>                
+			</topic_experts_list> 
+		</topic>
+		<topic id="2">
+			<name>CS</name>
+			<organisator>3</organisator>
+			<subtopics_list>
+				<subtopic>1</subtopic>
+				<subtopic>3</subtopic>
+			</subtopics_list>
+			<topic_experts_list>
+				<expert_id>4</expert_id>
+				<expert_id>5</expert_id>
+			</topic_experts_list>          
+		</topic>
+		<topic id="3">
+			<name>SQL</name>
+			<organisator>4</organisator>            
+		</topic>
+	</topics_list>
 </root>
