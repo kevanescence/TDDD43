@@ -1,0 +1,26 @@
+
+Question 1 without joins
+
+for $t in //topic
+where $t/name='Management'
+return $t/topic_experts_list/expert_id/text()
+
+Qestion 1 with joins
+
+for $t in //topic,
+    $e in //expert
+where $t/topic_experts_list/expert_id/text() = $e/@id
+and $t/name='Management'
+return $e
+
+for $topic in //topic,
+      $subtopic in //topic
+where $topic/subtopics_list/subtopic/text()=$subtopic/@id
+and $topic/name='CS'
+return $subtopic/name/text()
+Question 2 
+
+
+
+
+
